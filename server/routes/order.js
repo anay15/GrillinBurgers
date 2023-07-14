@@ -1,10 +1,11 @@
 import express from "express";
 import { authorizeAdmin, isAuthenticated } from "../middlewares/auth.js";
-import { getAdminOrders, getMyOrders, getOrderDetails, placeOrder, placeOrderOnline, processOrder } from "../controllers/order.js";
+import { getAdminOrders, getMyOrders, getOrderDetails, paymentVerification, placeOrder, placeOrderOnline, processOrder } from "../controllers/order.js";
 const router = express.Router();
 
-router.post("/createorder", placeOrder) //placeOrder is a handler in controller
-router.post("/createorderonline", placeOrderOnline);
+router.post("/createorder", isAuthenticated, placeOrder) //placeOrder is a handler in controller
+router.post("/createorderonline", isAuthenticated, placeOrderOnline);
+router.post("/paymentverification", isAuthenticated, paymentVerification)
 router.get("/myorders", isAuthenticated, getMyOrders);
 router.get("/order/:id", isAuthenticated, getOrderDetails);
 

@@ -28,6 +28,42 @@ const Menu = () => {
                     title="Cheese Burger"
                     handler={addToCartHandler}
                     delay={0.8} />
+                <Item itemNum={1}
+                    burgerSrc={burger1}
+                    price={200}
+                    title="Cheese Burger"
+                    handler={addToCartHandler}
+                    delay={0.1} />
+                <Item itemNum={1}
+                    burgerSrc={burger1}
+                    price={200}
+                    title="Cheese Burger"
+                    handler={addToCartHandler}
+                    delay={0.5} />
+                <Item itemNum={1}
+                    burgerSrc={burger1}
+                    price={200}
+                    title="Cheese Burger"
+                    handler={addToCartHandler}
+                    delay={0.8} />
+                <Item itemNum={1}
+                    burgerSrc={burger1}
+                    price={200}
+                    title="Cheese Burger"
+                    handler={addToCartHandler}
+                    delay={0.1} />
+                <Item itemNum={1}
+                    burgerSrc={burger1}
+                    price={200}
+                    title="Cheese Burger"
+                    handler={addToCartHandler}
+                    delay={0.3} />
+                <Item itemNum={1}
+                    burgerSrc={burger1}
+                    price={200}
+                    title="Cheese Burger"
+                    handler={addToCartHandler}
+                    delay={0.5} />
             </div>
         </section>
     )

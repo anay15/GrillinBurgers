@@ -1,3 +1,90 @@
+// @import "colors";
+
+// #menu {
+//     width: 100%;
+//     min-height: 100vh;
+//     background-color: white;
+//     padding: 4rem;
+
+//     >h1 {
+//         font-size: 2rem;
+//         text-align: center;
+//         padding: 2rem;
+//     }
+
+//     >div {
+//         display: flex;
+//         justify-content: space-evenly;
+//     }
+// }
+
+// .menuCard {
+//     background-color: white;
+//     width: 30%;
+//     border-radius: 20px;
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.495);
+//     margin-left: 2%;
+//     margin-right: 2%;
+
+//     >div {
+//         border-radius: 20px 20px 0 0;
+//         background-color: $red;
+//         display: flex;
+//         align-items: center;
+//         padding: 2rem;
+//         color: white;
+//         height: 4rem;
+//     }
+
+//     >main {
+//         padding: 2rem;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+
+//         >img {
+//             height: 15rem;
+//             width: 100%;
+//             object-fit: contain;
+//         }
+
+//         >h5 {
+//             font-size: 1.8rem;
+//         }
+
+//         >p {
+//             text-transform: uppercase;
+//             letter-spacing: 2px;
+//             padding: 1rem 0;
+//         }
+
+//         >button {
+//             background-color: $red;
+//             color: white;
+//             border: none;
+//             padding: 1rem 2rem;
+//             width: 100%;
+//             border-radius: 10px;
+//             cursor: pointer;
+
+//             &:hover {
+//                 background-color: $reddark;
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 600px) {
+//     #menu>div {
+//         flex-direction: column;
+//     }
+
+//     .menuCard {
+//         width: 100%;
+//         margin: 1rem 0;
+//     }
+// }
+
 @import "colors";
 
 #menu {
@@ -5,73 +92,74 @@
     min-height: 100vh;
     background-color: white;
     padding: 4rem;
+}
 
-    >h1 {
-        font-size: 2rem;
-        text-align: center;
-        padding: 2rem;
-    }
+#menu>h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
 
-    >div {
-        display: flex;
-        justify-content: space-evenly;
-    }
+#menu>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: -2%;
 }
 
 .menuCard {
     background-color: white;
-    width: 30%;
+    width: calc(33.33% - 4%);
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.495);
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 2%;
+}
 
-    >div {
-        border-radius: 20px 20px 0 0;
-        background-color: $red;
-        display: flex;
-        align-items: center;
-        padding: 2rem;
-        color: white;
-        height: 4rem;
-    }
+.menuCard>div {
+    border-radius: 20px 20px 0 0;
+    background-color: $red;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    height: 4rem;
+}
 
-    >main {
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+.menuCard>main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        >img {
-            height: 15rem;
-            width: 100%;
-            object-fit: contain;
-        }
+.menuCard>main>img {
+    height: 15rem;
+    width: 100%;
+    object-fit: contain;
+}
 
-        >h5 {
-            font-size: 1.8rem;
-        }
+.menuCard>main>h5 {
+    font-size: 1.8rem;
+}
 
-        >p {
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            padding: 1rem 0;
-        }
+.menuCard>main>p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1rem 0;
+}
 
-        >button {
-            background-color: $red;
-            color: white;
-            border: none;
-            padding: 1rem 2rem;
-            width: 100%;
-            border-radius: 10px;
-            cursor: pointer;
+.menuCard>main>button {
+    background-color: $red;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
-            &:hover {
-                background-color: $reddark;
-            }
-        }
-    }
+.menuCard>main>button:hover {
+    background-color: $reddark;
 }
 
 @media screen and (max-width: 600px) {
@@ -81,6 +169,6 @@
 
     .menuCard {
         width: 100%;
-        margin: 1rem 0;
+        margin: 2% 0;
     }
 }
