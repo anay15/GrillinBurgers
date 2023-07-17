@@ -1,5 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 import Item from './Item'
 import burger1 from "../../assets/burger.png"
 const Menu = () => {

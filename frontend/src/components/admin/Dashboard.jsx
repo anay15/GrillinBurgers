@@ -1,11 +1,10 @@
 import React from 'react'
 // import "./styles/dashboard.scss";
 import "./dashboard.scss";
-import { FiVideo } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import { Doughnut } from "react-chartjs-2"
 import { Chart as ChartJS, Tooltip, ArcElement, Legend } from "chart.js";
-import Loader from "../layout/Loader";
+
 ChartJS.register(Tooltip, ArcElement, Legend);
 
 const Box = ({ title, value }) => (
