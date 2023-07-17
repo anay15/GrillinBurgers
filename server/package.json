@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "SET NODE_ENV=production & node server.js",
-    "dev": "nodemon server.js",
+    "dev": "node server.js",
     "build": "npm i"
   },
   "author": "",
